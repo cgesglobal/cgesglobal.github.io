@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
   <title>CGES | Citadelle Global Engineering Solutions</title>
 
   <meta name="description"
-        content="Citadelle Global Engineering Solutions (CGES) propose des solutions en gestion de projets, génie civil et gestion immobilière.">
+        content="Citadelle Global Engineering Solutions (CGES) offre des solutions en gestion de projets, génie civil et gestion immobilière.">
 
   <style>
     * {
@@ -28,29 +29,29 @@
     }
 
     header {
-      background: #0b1f3a;
+      background: #071d3b;
       color: white;
-      padding: 18px 8%;
+      padding: 20px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
-    .brand {
-      font-size: 26px;
-      font-weight: bold;
+    .brand h1 {
+      font-size: 30px;
       color: #d4af37;
+    }
+
+    .brand p {
+      font-size: 14px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 22px;
-      font-size: 15px;
+      margin-left: 20px;
+      font-weight: bold;
     }
 
     nav a:hover {
@@ -58,93 +59,56 @@
     }
 
     .hero {
-      min-height: 620px;
-      background:
-        linear-gradient(rgba(11,31,58,.88), rgba(11,31,58,.82));
+      background: #0b2a52;
       color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      padding: 80px 8%;
+      padding: 90px 20px;
     }
 
-    .hero-content {
-      max-width: 900px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      line-height: 1.15;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 span {
-      color: #d4af37;
+    .hero h2 {
+      font-size: 44px;
+      margin-bottom: 15px;
     }
 
     .hero .slogan {
-      font-size: 25px;
-      margin-bottom: 18px;
-      color: #f1d77a;
+      color: #d4af37;
+      font-size: 23px;
+      font-weight: bold;
+      margin-bottom: 20px;
     }
 
     .hero p {
-      font-size: 18px;
       max-width: 750px;
       margin: auto;
+      font-size: 18px;
     }
 
-    .buttons {
-      margin-top: 32px;
-    }
-
-    .btn {
+    .button {
       display: inline-block;
+      margin-top: 30px;
+      background: #d4af37;
+      color: #071d3b;
       padding: 13px 25px;
-      margin: 7px;
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .btn-gold {
-      background: #d4af37;
-      color: #0b1f3a;
-    }
-
-    .btn-outline {
-      border: 2px solid white;
-      color: white;
-    }
-
     section {
-      padding: 75px 8%;
+      padding: 70px 8%;
     }
 
-    .section-title {
+    section h2 {
+      color: #071d3b;
+      font-size: 32px;
       text-align: center;
-      margin-bottom: 45px;
-    }
-
-    .section-title h2 {
-      color: #0b1f3a;
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
-
-    .section-title .line {
-      width: 70px;
-      height: 4px;
-      background: #d4af37;
-      margin: auto;
+      margin-bottom: 35px;
     }
 
     .about {
-      max-width: 950px;
+      max-width: 900px;
       margin: auto;
       text-align: center;
-      font-size: 18px;
     }
 
     .services {
@@ -152,89 +116,53 @@
     }
 
     .cards {
-      max-width: 1150px;
-      margin: auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 25px;
+      max-width: 1100px;
+      margin: auto;
     }
 
     .card {
       background: white;
-      padding: 32px 25px;
+      padding: 30px;
       border-radius: 8px;
-      border-top: 4px solid #d4af37;
-      box-shadow: 0 5px 18px rgba(0,0,0,.07);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
     }
 
     .card h3 {
-      color: #0b1f3a;
-      margin-bottom: 14px;
-    }
-
-    .immobilier {
-      background: #0b1f3a;
-      color: white;
-    }
-
-    .immobilier .section-title h2 {
-      color: white;
-    }
-
-    .immobilier-content {
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .immobilier-content p {
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
-
-    .mission-grid {
-      max-width: 1050px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .mission-box {
-      padding: 35px;
-      background: #f4f6f8;
-      border-left: 5px solid #d4af37;
-    }
-
-    .mission-box h3 {
-      color: #0b1f3a;
+      color: #071d3b;
       margin-bottom: 12px;
     }
 
+    .immobilier {
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
     .contact {
-      background: #f4f6f8;
+      background: #071d3b;
+      color: white;
       text-align: center;
     }
 
-    .contact p {
-      margin: 10px 0;
-      font-size: 17px;
+    .contact h2 {
+      color: #d4af37;
     }
 
     .contact a {
-      color: #0b1f3a;
+      color: #d4af37;
+      text-decoration: none;
       font-weight: bold;
     }
 
     footer {
-      background: #071426;
-      color: #d1d5db;
+      background: #041326;
+      color: #cccccc;
       text-align: center;
-      padding: 28px 8%;
-    }
-
-    footer strong {
-      color: #d4af37;
+      padding: 20px;
+      font-size: 14px;
     }
 
     @media (max-width: 700px) {
@@ -244,20 +172,21 @@
       }
 
       nav {
-        margin-top: 12px;
+        margin-top: 15px;
       }
 
       nav a {
-        margin: 0 7px;
+        display: inline-block;
+        margin: 5px 7px;
         font-size: 13px;
       }
 
-      .hero h1 {
-        font-size: 34px;
+      .hero h2 {
+        font-size: 32px;
       }
 
       .hero .slogan {
-        font-size: 20px;
+        font-size: 19px;
       }
     }
   </style>
@@ -266,4 +195,127 @@
 <body>
 
 <header>
-  <
+  <div class="brand">
+    <h1>CGES</h1>
+    <p>Citadelle Global Engineering Solutions</p>
+  </div>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#immobilier">Immobilier</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="accueil">
+    <h2>Citadelle Global Engineering Solutions</h2>
+
+    <div class="slogan">
+      Des fondations solides pour l'avenir
+    </div>
+
+    <p>
+      Des solutions professionnelles en gestion de projets,
+      génie civil et gestion immobilière.
+    </p>
+
+    <a class="button" href="#services">
+      Découvrir nos services
+    </a>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos de CGES</h2>
+
+    <div class="about">
+      <p>
+        Citadelle Global Engineering Solutions (CGES) est une initiative
+        spécialisée dans le développement de solutions adaptées aux besoins
+        des particuliers, des entreprises et des organisations.
+      </p>
+      <br>
+      <p>
+        Notre approche repose sur la rigueur, la planification,
+        la transparence et la recherche de solutions durables.
+      </p>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Nos services</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Gestion de projets</h3>
+        <p>
+          Planification, organisation, suivi et accompagnement
+          dans la réalisation de projets.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Génie civil</h3>
+        <p>
+          Services techniques et accompagnement pour des projets
+          de construction et d'infrastructure.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>CGES Immobilier</h3>
+        <p>
+          Solutions de gestion et de suivi immobilier adaptées
+          aux propriétaires et à la diaspora.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="immobilier">
+    <h2>CGES Immobilier</h2>
+
+    <div class="immobilier">
+      <p>
+        CGES Immobilier est notre service de gestion et de développement
+        immobilier destiné notamment aux propriétaires souhaitant bénéficier
+        d'un suivi structuré et professionnel de leurs biens.
+      </p>
+      <br>
+      <p>
+        Nos domaines d'intervention comprennent notamment la gestion locative,
+        le suivi des propriétés, l'entretien, les réparations et
+        l'accompagnement administratif.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+
+    <p>
+      Vous souhaitez obtenir plus d'informations sur CGES ou nos services ?
+    </p>
+
+    <p style="margin-top:20px;">
+      Courriel :
+      <a href="mailto:info@cgesglobal.com">
+        info@cgesglobal.com
+      </a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Citadelle Global Engineering Solutions (CGES).
+  Tous droits réservés.
+</footer>
+
+</body>
+</html>
