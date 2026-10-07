@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CGES | Citadelle Global Engineering Solutions</title>
+
+  <meta name="description"
+        content="Citadelle Global Engineering Solutions (CGES) propose des solutions en gestion de projets, génie civil et gestion immobilière.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1f2937;
+      line-height: 1.6;
+      background: #ffffff;
+    }
+
+    header {
+      background: #0b1f3a;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .brand {
+      font-size: 26px;
+      font-weight: bold;
+      color: #d4af37;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .hero {
+      min-height: 620px;
+      background:
+        linear-gradient(rgba(11,31,58,.88), rgba(11,31,58,.82));
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 8%;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #d4af37;
+    }
+
+    .hero .slogan {
+      font-size: 25px;
+      margin-bottom: 18px;
+      color: #f1d77a;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .buttons {
+      margin-top: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 25px;
+      margin: 7px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-gold {
+      background: #d4af37;
+      color: #0b1f3a;
+    }
+
+    .btn-outline {
+      border: 2px solid white;
+      color: white;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      color: #0b1f3a;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .section-title .line {
+      width: 70px;
+      height: 4px;
+      background: #d4af37;
+      margin: auto;
+    }
+
+    .about {
+      max-width: 950px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .services {
+      background: #f4f6f8;
+    }
+
+    .cards {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 32px 25px;
+      border-radius: 8px;
+      border-top: 4px solid #d4af37;
+      box-shadow: 0 5px 18px rgba(0,0,0,.07);
+    }
+
+    .card h3 {
+      color: #0b1f3a;
+      margin-bottom: 14px;
+    }
+
+    .immobilier {
+      background: #0b1f3a;
+      color: white;
+    }
+
+    .immobilier .section-title h2 {
+      color: white;
+    }
+
+    .immobilier-content {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .immobilier-content p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .mission-grid {
+      max-width: 1050px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .mission-box {
+      padding: 35px;
+      background: #f4f6f8;
+      border-left: 5px solid #d4af37;
+    }
+
+    .mission-box h3 {
+      color: #0b1f3a;
+      margin-bottom: 12px;
+    }
+
+    .contact {
+      background: #f4f6f8;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 17px;
+    }
+
+    .contact a {
+      color: #0b1f3a;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #071426;
+      color: #d1d5db;
+      text-align: center;
+      padding: 28px 8%;
+    }
+
+    footer strong {
+      color: #d4af37;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero .slogan {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <
